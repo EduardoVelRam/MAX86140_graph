@@ -1,4 +1,4 @@
-# HR and Blood Pressure Code
+# Heart Rate Code V01
  
 # Graph raw data (just for visualization)
 import pandas as pd
@@ -23,7 +23,7 @@ def HR(data,freq):
         dpp = peaks[i]-peaks[i-1]
         hr = (freq*60)/dpp 
         rates.append(round(hr))
-    return peaks, rates  # used for visualization
+    return peaks, rates  
 
 # Graph for peaks visualization
 peaks1, Hrates1 = HR(sample1, sps)
